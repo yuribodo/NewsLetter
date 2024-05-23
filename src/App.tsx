@@ -1,5 +1,6 @@
 import './App.css'
-import CustomForm from './components/NewsletterSubscribe'
+import NewsletterForm from './components/NewsletterForm'
+
 
 function App() {
   
@@ -34,7 +35,7 @@ function App() {
               <input
                 type="text"
                 name="nome"
-                placeholder="Digiteseu Email!"
+                placeholder="Digite seu Email!"
                 className="mb-4 border border-gray-300 rounded-lg shadow-sm p-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
               />
 
@@ -51,17 +52,12 @@ function App() {
 
         </div>
 
-
-        <div className=' bg-slate-300 h-[40vh]'>
-          <CustomForm>
-
-          </CustomForm>
+        <div className='h-[30vh]'>
+          <NewsletterForm/>
         </div>
 
-
-        <div className=' bg-slate-400 h-[100vh]'>
-          
-        </div>
+        
+    
       </div>
     </>
   )
